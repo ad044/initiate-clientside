@@ -1,0 +1,14 @@
+.loading-body {
+  background: #000 url(../images/loading.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  font-family: pixop;
+  overflow: hidden;
+}
+
+#loading-message {
+  font-size: 4rem;
+  text-align: center;
+}

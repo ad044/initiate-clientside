@@ -1,0 +1,657 @@
+@font-face {
+  font-family: "pixop";
+  src: url("../fonts/PixelOperator.ttf") format("truetype");
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: pixop;
+}
+
+.index-body {
+  background: #000;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: pixop;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main-index {
+  height: 70vh;
+  background: url("../images/smol_city_7.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#main-logo {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 7vh;
+  width: 20%;
+  z-index: 211;
+  filter: drop-shadow(0px 0px 100px #f54284);
+}
+
+.sep-top {
+  display: inline-block;
+  width: 100%;
+  margin-top: -10em;
+}
+
+.sep-bottom {
+  display: inline;
+  margin-top: 5em;
+}
+
+.sepimg {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+
+.index-img {
+  width: 15%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  display: block;
+  margin: auto;
+}
+
+.between {
+  background: url(../images/stars.png);
+  background-size: contain;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+#bottom {
+  background: url(../images/maint.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#middle-text {
+  margin: 0 auto;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 9em;
+  margin-top: -0.3em;
+  z-index: 211;
+  position: relative;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f54284,
+    0 0 30px #f54284, 0 0 40px #f54284, 0 0 55px #f54284, 0 0 75px #f54284;
+}
+
+#logo {
+  margin-bottom: 1em;
+}
+
+#logo:hover {
+  filter: drop-shadow(0px 0px 10px white);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.left-blocks,
+.middle-blocks {
+  float: left;
+  width: 33%;
+  vertical-align: middle;
+}
+
+.right-blocks {
+  float: right;
+  width: 33%;
+  vertical-align: middle;
+}
+#board-block {
+  display: block;
+  background: url(../images/stars.png);
+  background-size: contain;
+  border: 1px solid white;
+  width: 90%;
+  margin: auto;
+  margin-top: 3em;
+}
+
+#board-header {
+  color: #e34b64;
+  text-align: center;
+  font-size: 4rem;
+}
+
+#board-image {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1em;
+  border: 1px solid white;
+}
+
+#userarea-block-container {
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(-1px 0px #fff) drop-shadow(0px 1px #fff)
+    drop-shadow(1px 0px #fff) drop-shadow(0px -1px #fff);
+}
+
+#userarea-block {
+  display: block;
+  background: url(../images/planet.png);
+  background-color: #000;
+  width: 90%;
+  margin: auto;
+  margin-top: 1em;
+  background-size: cover;
+  background-position: top;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 100%);
+}
+
+#userarea-header {
+  text-shadow: -0.035em 0.035em 0.04rem #1ba5a5,
+    0.035em -0.035em 0.04rem #c013b4, 0px 0px 16px #aaf;
+  text-align: center;
+  font-size: 4rem;
+  color: black;
+}
+
+#discord-block-container {
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(-1px 0px #fff) drop-shadow(0px 1px #fff)
+    drop-shadow(1px 0px #fff) drop-shadow(0px -1px #fff);
+}
+
+#discord-block {
+  display: block;
+  background: url(../images/stars.png);
+  border: 1px solid white;
+  width: 90%;
+  margin: auto;
+  margin-top: 3em;
+  background-size: cover;
+  background-position: top;
+  height: 100%;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+}
+
+#discord-header {
+  color: #4ba4e3;
+  text-align: center;
+  font-size: 4rem;
+  display: inline-block;
+}
+
+#discord-image {
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#initiative-block-container {
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(-1px 0px #fff) drop-shadow(0px 1px #fff)
+    drop-shadow(1px 0px #fff) drop-shadow(0px -1px #fff);
+}
+
+#initiative-block {
+  display: block;
+  background-color: #000;
+  border: 1px solid white;
+  width: 90%;
+  margin: auto;
+  margin-top: 3em;
+  background-position: top;
+  height: 100%;
+  background: url(../images/500.png);
+  text-align: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+#initiative-count {
+  font-size: 4rem;
+  color: orange;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+#initiative-header {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+#sign-block {
+  display: block;
+  background-color: #000;
+  border: 1px solid white;
+  width: 90%;
+  margin: auto;
+  margin-top: 3em;
+  height: 100%;
+  background: #000 url(../images/lainmove.webp);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+#sign-header {
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  color: #32dd72;
+  font-size: 4rem;
+}
+
+#menu-block-container {
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(-1px 0px #fff) drop-shadow(0px 1px #fff)
+    drop-shadow(1px 0px #fff) drop-shadow(0px -1px #fff);
+}
+
+#menu-block {
+  display: block;
+  background-color: #000;
+  background: url(../images/divinity.png);
+  background-size: cover;
+  border: 1px solid white;
+  width: 90%;
+  margin: auto;
+  margin-top: 0.5em;
+  height: 100%;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-items {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: auto;
+  order: 2;
+  border: 1px solid black;
+  background: rgb(0, 0, 0, 0.45);
+  padding: 0.5em;
+  margin-right: 3em;
+}
+
+#menu-header {
+  pointer-events: none;
+  font-size: 5em;
+  color: white;
+  padding-left: 1.5em;
+  padding-top: 0.5em;
+  text-shadow: -0.035em 0.035em 0.04rem #1ba5a5,
+    0.035em -0.035em 0.04rem #c013b4, 0px 0px 16px #aaf;
+}
+
+#menu-items a {
+  color: white;
+  text-shadow: -0.035em 0.035em 0.04rem #1ba5a5,
+    0.035em -0.035em 0.04rem #c013b4, 0px 0px 16px #aaf;
+}
+
+#menu-items a:hover {
+  color: #e34b64;
+}
+
+#omniverse-block-container {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(-1px 0px #fff) drop-shadow(0px 1px #fff)
+    drop-shadow(1px 0px #fff) drop-shadow(0px -1px #fff);
+}
+
+#omniverse-block {
+  display: block;
+  background: url(../images/stars.png);
+  background-size: contain;
+  width: 100%;
+  margin: auto;
+  margin-top: 3em;
+  border: 1px solid white;
+  clip-path: polygon(0 0, 100% 0%, 100% 91%, 0 100%);
+}
+
+#omniverse-header {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  background: url(../images/summarytext.webp) no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#summary-block-container {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(-1px 0px #fff) drop-shadow(0px 1px #fff)
+    drop-shadow(1px 0px #fff) drop-shadow(0px -1px #fff);
+}
+
+#summary-block {
+  display: block;
+  background-color: #000;
+  background: url(../images/stars.png);
+  background-size: contain;
+  border: 1px solid white;
+  width: 100%;
+  margin: auto;
+  clip-path: polygon(0 19%, 100% 1%, 100% 100%, 0 100%);
+}
+
+#summary-header {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  background: url(../images/summarytext.webp) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#summary-arrow {
+  width: 18%;
+  cursor: pointer;
+  margin-top: -3rem;
+}
+
+#portal {
+  margin-top: -3rem;
+  width: 60%;
+  background: url(../images/omni.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.transition-omniverse-summary-enter {
+  transform: translateY(100vh);
+  transition: all 0.5s ease-in-out;
+}
+.transition-omniverse-summary-enter-done {
+  transform: translateY(100vh);
+  display: none !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.transition-omniverse-summary-exit {
+  transform: translateY(-100vh);
+  transition: all 0.5s ease-in-out;
+}
+
+.transition-omniverse-summary-exit-done {
+  transform: translateY(0vh);
+  transition: all 0.5s ease-in-out;
+}
+
+.transition-lore-enter {
+  transform: translateY(-100vh);
+  display: block !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.transition-lore-enter-done {
+  transform: translateY(0vh);
+  display: block !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.transition-lore-exit {
+  transform: translateY(100vh);
+  display: block !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.transition-lore-exit-done {
+  transform: translateY(100vh);
+  transition: all 0.5s ease-in-out;
+}
+
+#lore-summary-block {
+  display: none;
+  background-color: #000;
+  background: url(../images/stars.png);
+  background-size: contain;
+  border: 1px solid white;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+
+#lore-summary-text {
+  color: #f5cca1;
+  font-size: 2rem;
+  padding: 1em;
+  padding-top: 0;
+}
+
+#lall {
+  color: pink;
+  text-align: center;
+}
+
+#intro {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  pointer-events: none;
+}
+
+.animate-logo-intro {
+  animation-name: animate-logo-intro;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+}
+
+@keyframes animate-logo-intro {
+  0% {
+    opacity: 0;
+    transform: translateY(4vh);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: drop-shadow(0px 0px 100px #f54284);
+  }
+}
+
+.animate-intro-bg {
+  animation-name: animate-intro-bg;
+  animation-duration: 8s;
+  animation-fill-mode: both;
+}
+
+@keyframes animate-intro-bg {
+  0% {
+    background-color: #000;
+  }
+  50% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #000;
+    opacity: 0;
+  }
+}
+
+.summaryinitiative {
+  text-shadow: -0.035em 0.035em 0.04rem #1ba5a5,
+    0.035em -0.035em 0.04rem #c013b4, 0px 0px 16px #aaf;
+  color: white;
+}
+
+#board-block:hover #board-header,
+#discord-block:hover #discord-header,
+#userarea-block:hover #userarea-header,
+#sign-block:hover #sign-header {
+  color: white;
+}
+
+#omniverse-block:hover #omniverse-header,
+#summary-block:hover #summary-header,
+#summary-block:hover {
+  -webkit-text-fill-color: white !important;
+  cursor: pointer;
+}
+
+#lore-summary-block:hover,
+#lore-summary-block:hover #lore-summary-text {
+  cursor: pointer;
+  color: white;
+}
+
+#lore-summary-block:hover .summaryinitiative {
+  color: #f5cca1;
+}
+
+.fade-out {
+  animation-name: fadeOut;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hide-display {
+  display: none !important;
+}
+
+.show-display {
+  display: block !important;
+}
+
+@media only screen and (max-width: 768px) {
+  #middle-text {
+    font-size: 6rem;
+    margin-top: 0.1em;
+  }
+  #logo,
+  #main-logo {
+    width: 40%;
+  }
+  #main-logo {
+    margin-top: 5em;
+  }
+  #main-index {
+    height: 40vh;
+  }
+  #discord-header,
+  #board-header {
+    font-size: 2em;
+  }
+  #userarea-header {
+    font-size: 2rem;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  #discord-image {
+    margin-top: 0.5em;
+  }
+  #omniverse-header {
+    font-size: 1.5em;
+  }
+  #sign-header,
+  #initiative-header,
+  #initiative-count {
+    font-size: 1em;
+  }
+  #portal {
+    margin-top: 0.5em;
+  }
+  #summary-header {
+    font-size: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  #discord-block,
+  #board-block,
+  #sign-block,
+  #userarea-block,
+  #omniverse-block,
+  #summary-block,
+  #initiative-block,
+  #menu-block {
+    clip-path: none;
+    margin-top: 1em;
+  }
+  #menu-header {
+    display: none;
+  }
+  #menu-items {
+    margin: 0 auto;
+    font-size: 1em;
+  }
+  #lore-summary-text {
+    font-size: 0.6em;
+  }
+  #lore-summary-block {
+    margin-top: 1em;
+    height: 100%;
+  }
+  #summary-arrow {
+    margin-top: 0;
+  }
+  #bottom {
+    height: 100%;
+  }
+}

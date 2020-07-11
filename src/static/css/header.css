@@ -1,0 +1,132 @@
+header {
+  filter: drop-shadow(-1px 0px #fff) drop-shadow(0px 1px #fff)
+    drop-shadow(1px 0px #fff);
+  z-index: 100000000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: 0.5s top;
+}
+
+#header-knobs {
+  width: 100%;
+  transform: translateY(-10em);
+}
+
+.header-knob {
+  display: inline-block;
+  float: left;
+  margin-left: 1em;
+  margin-top: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-knob.right-hand {
+  margin-left: 0;
+  float: right;
+}
+
+.header-knob-text {
+  clip-path: polygon(100% 0, 0 0, 10% 100%, 90% 100%);
+  background-color: #000;
+  color: #fff;
+  height: 0.8em;
+  padding: 1em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  margin-right: 1em;
+  font-size: 1.5rem;
+}
+
+#header-marquee {
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+  font-size: 1.3em;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #000;
+  transform: translateY(-10em);
+}
+
+#header-marquee_inner {
+  display: inline-block;
+  animation: HeaderMarqueeAnim 60s linear infinite;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes HeaderMarqueeAnim {
+  0% {
+    transform: translate(100vw, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.header-marquee-element {
+  position: relative;
+  top: -0.5em;
+}
+
+.header-marquee-element::after {
+  content: "";
+  display: inline-block;
+  background-color: #fff;
+  width: 1px;
+  height: 1.75em;
+  position: relative;
+  top: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  transform: skewX(-15deg);
+}
+
+.header-logo {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  height: 30%;
+  width: 5%;
+}
+
+#header-logo-img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header-knob:hover {
+  margin-top: -0.2em;
+}
+
+svg {
+  height: 0;
+  width: 0;
+}
+
+.initiative {
+  text-shadow: -0.035em 0.035em 0.04rem #1ba5a5,
+    0.035em -0.035em 0.04rem #c013b4, 0px 0px 16px #aaf;
+}
+
+.drop-header-enter-done {
+  transform: translateY(0) !important;
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-knob-text {
+    margin-right: 0;
+    font-size: 1em;
+    margin-left: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    clip-path: none;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+  }
+}

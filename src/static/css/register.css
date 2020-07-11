@@ -1,0 +1,474 @@
+.register-body,
+.privacy-body {
+  background: #000 url("../images/saturn_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: pixop;
+  overflow: hidden;
+}
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+#first-message {
+  margin: 0 auto;
+  background: transparent;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#welcome {
+  font-size: 4rem;
+  text-shadow: 3px 6px #000, 0px -1px #000, 0px 1px #000, -1px 0px #000,
+    1px 0px #000, -1px -1px #000, 1px 1px #000, -1px 1px #000, 1px -1px #000;
+}
+
+p {
+  font-size: 2rem;
+}
+
+#rules {
+  text-align: left;
+  border: 2px solid white;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 1.8rem;
+}
+
+.important {
+  color: #f54284;
+  text-shadow: 0px 1px 20px;
+}
+
+#privacy-policy-container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 45rem;
+  display: none;
+}
+
+#privacy-policy-div {
+  position: relative;
+  margin: 0 auto;
+  background: transparent;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 2px solid white;
+  padding: 1rem;
+  height: 45rem;
+  overflow-y: scroll;
+  font-size: 2rem;
+}
+
+#privacy {
+  color: yellow;
+  transition: all 0.3s ease-in-out;
+}
+
+#privacy:hover {
+  cursor: pointer;
+  color: white;
+}
+
+a {
+  color: #e34b64;
+}
+
+button {
+  font-family: pixop;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  background: #000000;
+  padding: 4px;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-bottom: 0.5em;
+  box-shadow: 0px 8px white, 0px 8px 32px white;
+  position: relative;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+button:active {
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-animation: none;
+  color: black;
+}
+
+#privacy-header {
+  text-align: center;
+  font-size: 4rem;
+}
+
+#privacy-agree-button {
+  margin-left: 0.25em;
+  margin-top: 0.5em;
+}
+
+.moveFirstTop {
+  animation-name: moveFirstTop;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+
+@keyframes moveFirstTop {
+  100% {
+    transform: translate(-50%, -200vh);
+  }
+}
+
+.moveSecondUp {
+  animation-name: moveSecondUp;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+
+@keyframes moveSecondUp {
+  0% {
+    transform: translate(-50%, 200vh);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+#second-stage-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#second-stage-where-from-container {
+  display: none;
+}
+
+#second-stage-email {
+  position: relative;
+  margin: 0 auto;
+  background: transparent;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  padding: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#second-stage-header {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 6px #000, 0px -1px #000, 0px 1px #000, -1px 0px #000,
+    1px 0px #000, -1px -1px #000, 1px 1px #000, -1px 1px #000, 1px -1px #000;
+  position: relative;
+}
+
+#second-stage h1 {
+  font-size: 4rem;
+}
+
+input {
+  border: 1px solid white;
+  padding: 2px;
+  font-size: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+#where-from-input {
+  height: 10em;
+}
+
+.moveLeftEmail {
+  animation-name: moveLeftEmail;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+
+@keyframes moveLeftEmail {
+  100% {
+    transform: translate(-200%, 0);
+  }
+}
+
+.moveFromLeftWhereFrom {
+  animation-name: moveFromLeftWhereFrom;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+
+@keyframes moveFromLeftWhereFrom {
+  0% {
+    transform: translate(200%, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+#email-confirm-button,
+#where-from-confirm-button {
+  margin-top: 0.5em;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 15em;
+  font-size: 1.5rem;
+}
+
+#second-stage-where-from {
+  position: relative;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  padding: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.success {
+  color: lime !important;
+  opacity: 1 !important;
+}
+
+#final-paragraph {
+  font-size: 2rem;
+  opacity: 0;
+  color: white;
+  text-align: center;
+}
+
+#complete-registration-button {
+  opacity: 0;
+}
+
+.zero-opacity {
+  opacity: 0;
+}
+
+.transition-first-block-for-privacy-enter {
+  transform: translate(-250%, -50%) !important;
+  transition: all 0.5s;
+}
+
+.transition-first-block-for-privacy-enter-done {
+  transform: translate(-250%, -50%) !important;
+  display: none;
+  transition: all 0.5s;
+}
+
+.transition-first-block-for-privacy-exit {
+  transform: translate(-250%, -50%) !important;
+  transition: all 0.5s;
+}
+
+.transition-first-block-for-privacy-exit-done {
+  transform: translate(-50%, -50%) !important;
+  transition: all 0.5s;
+}
+
+.transition-privacy-enter-active {
+  transform: translate(250%, -50%) !important;
+  display: block !important;
+  transition: all 0.5s;
+}
+
+.transition-privacy-enter-done {
+  transform: translate(-50%, -50%) !important;
+  display: block !important;
+  transition: all 0.5s;
+}
+
+.transition-privacy-exit {
+  transform: translate(250%, -50%) !important;
+  display: block !important;
+  transition: all 0.5s;
+}
+
+.transition-privacy-exit-done {
+  transform: translate(250%, -50%) !important;
+  display: none !important;
+  transition: all 0.5s;
+}
+
+.transition-first-block-for-second-stage-enter {
+  transform: translate(-50%, -250%) !important;
+  transition: all 0.5s;
+}
+
+.transition-first-block-for-second-stage-enter-done {
+  transform: translate(-50%, -250%) !important;
+  display: none;
+  transition: all 0.5s;
+}
+
+.transition-second-stage-enter {
+  transform: translate(-50%, 250%) !important;
+  display: block !important;
+  transition: all 0.5s;
+}
+
+.transition-second-stage-enter-done {
+  transform: translate(-50%, -50%) !important;
+  display: block !important;
+  transition: all 0.5s;
+}
+
+.transition-email-enter {
+  transform: translateX(-150vw);
+  transition: all 0.5s;
+}
+
+.transition-email-enter-done {
+  transform: translateX(-150vw);
+  display: none !important;
+  transition: all 0.5s;
+}
+
+.transition-where-from-enter {
+  transform: translateX(150vw);
+  display: block !important;
+  transition: all 0.5s;
+}
+
+.transition-where-from-enter-done {
+  transform: translateX(0vw);
+  display: block !important;
+  transition: all 0.5s;
+}
+
+.shake-first-stage {
+  animation: shake-first-stage;
+  animation-duration: 0.3s;
+}
+
+@keyframes shake-first-stage {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  20% {
+    transform: translate(-52%, -50%);
+  }
+
+  40% {
+    transform: translate(-48%, -50%);
+  }
+
+  60% {
+    transform: translate(-52%, -50%);
+  }
+
+  80% {
+    transform: translate(-48%, -50%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.shake-second-stage {
+  animation: shake-second-stage;
+  animation-duration: 0.3s;
+}
+
+@keyframes shake-second-stage {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-20px);
+  }
+
+  40% {
+    transform: translateX(20px);
+  }
+
+  60% {
+    transform: translateX(-20px);
+  }
+
+  80% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .register-body, .privacy-body {
+    overflow-y: scroll;
+    background: #000;
+  }
+  #rules {
+    font-size: 1em;
+  }
+  #first-paragraph {
+    font-size: 1em;
+  }
+  #first-message {
+    margin-top: 10em;
+  }
+  #privacy-policy-div {
+    font-size: 1em;
+    margin-top: 3em;
+  }
+  #privacy-header {
+    font-size: 2em;
+  }
+  #privacy-agree-button {
+    margin-left: 0.65em;
+  }
+  #second-stage-header {
+    font-size: 3em;
+  }
+  #email-confirm-button,
+  #where-from-confirm-button {
+    width: 50%;
+    transform: translateX(50%);
+  }
+  input {
+    width: 50vw !important;
+    font-size: 1em;
+  }
+  #where-from-input {
+    width: 50vw;
+  }
+}

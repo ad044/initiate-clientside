@@ -1,0 +1,191 @@
+.omniverse-body {
+  background: #000 url(../images/stars_seamless.png);
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+  font-family: pixop;
+}
+
+#main-omniverse {
+  height: 70vh;
+  background: url("../images/INTIATE_Lore_Page.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+#main-header {
+  color: white;
+  font-size: 10rem;
+  text-shadow: 3px 6px #000, 0px -1px #000, 0px 1px #000, -1px 0px #000,
+    1px 0px #000, -1px -1px #000, 1px 1px #000, -1px 1px #000, 1px -1px #000;
+}
+
+hr.rainbow {
+  margin: 0px;
+  border: none;
+  height: 2px;
+  background-image: -moz-linear-gradient(
+    left,
+    rgba(255, 2, 5, 0.5),
+    rgba(137, 11, 138, 0.5),
+    rgba(27, 123, 187, 0.5),
+    rgba(47, 195, 44, 0.5),
+    rgba(253, 201, 1, 0.5),
+    rgba(255, 91, 2, 0.5),
+    #ccc 45%,
+    #ccc 55%,
+    rgba(255, 91, 2, 0.5),
+    rgba(253, 201, 1, 0.5),
+    rgba(47, 195, 44, 0.5),
+    rgba(27, 123, 187, 0.5),
+    rgba(137, 11, 138, 0.5),
+    rgba(255, 2, 5, 0.5)
+  );
+}
+
+#omniverse-container {
+  margin: 0 auto;
+  position: relative;
+  width: 70%;
+  border: 1px solid #ffdf9b;
+}
+
+.section-paragraph {
+  text-align: justify;
+  font-size: 1.5rem;
+  color: #ffdf9b;
+  padding: 2rem;
+  background: #000;
+  opacity: 0;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.section-header {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 6px #000, 0px -1px #000, 0px 1px #000, -1px 0px #000,
+    1px 0px #000, -1px -1px #000, 1px 1px #000, -1px 1px #000, 1px -1px #000;
+  border: 1px solid #ffdf9b;
+  background-attachment: fixed !important;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.indent {
+  margin-left: 3em;
+}
+
+#universe-structure {
+  background: url("../images/planet.png");
+}
+
+#the-threat {
+  background: url("../images/sun.jpg");
+  background-size: contain;
+}
+
+#the-initiatives {
+  background: url("../images/observefix.png");
+  background-position: center;
+}
+
+#post-death-web {
+  background: url("../images/pdw.jpg");
+  background-position: center;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.section-arrow {
+  width: 10%;
+  margin-left: auto;
+  order: 2;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#universe-structure,
+#the-threat,
+#the-initiatives,
+#post-death-web,
+#initiate-schisms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotate-arrow-enter {
+  transform: rotate(0deg);
+}
+
+.rotate-arrow-done {
+  transform: rotate(180deg);
+}
+
+.transition-paragraph-enter {
+  max-height: 500px;
+  transition: all 0.5s ease-in-out;
+}
+
+.transition-paragraph-enter-done {
+  max-height: 500px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: height 0.5s ease;
+}
+
+.transition-paragraph-exit {
+  max-height: 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+.transition-paragraph-exit-done {
+  max-height: 0px;
+  padding: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.rotate-arrow-enter {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.rotate-arrow-enter-done {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.typed-cursor {
+  display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  #main-header {
+    font-size: 2em;
+  }
+  #main-omniverse {
+    height: 40vh;
+    background-position: center;
+  }
+  .section-header {
+    font-size: 1em;
+  }
+  .section-paragraph {
+    font-size: 0.8em;
+  }
+  .section-arrow {
+    width: 30%;
+  }
+}

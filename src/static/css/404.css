@@ -1,0 +1,182 @@
+.not-found-body {
+  background: #000 url(../images/prettysky.png);
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  font-family: pixop;
+}
+
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: transparent url(../images/starsfor404.png) repeat top center;
+  z-index: 0;
+  mix-blend-mode: lighten;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+}
+
+.stars::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: transparent url(../images/twinklingfor404.png) repeat top center;
+  z-index: 1;
+  animation: 200s move-twink-back linear infinite;
+  mix-blend-mode: normal;
+  backface-visibility: hidden;
+  -filterwebkit-backface-visibility: hidden;
+  pointer-events: none;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+#foreground {
+  background: transparent url(../images/404Fore.png);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100% 100%;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#not-found-lain {
+  position: absolute;
+  bottom: 0px;
+  right: 25%;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 11;
+}
+
+#boh,
+mark {
+  background-color: #473eff;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+}
+
+#boh {
+  font-size: 2rem;
+  display: inline-block;
+}
+
+#not-found-list {
+  position: absolute;
+  left: 25%;
+  z-index: 100000000;
+}
+
+button {
+  font-family: pixop;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  background: #000000;
+  padding: 10px;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-bottom: 0.5em;
+  box-shadow: 0px 8px white, 0px 8px 32px white;
+  position: relative;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+button:active {
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-animation: none;
+  color: black;
+}
+
+#go-back {
+  position: absolute;
+  right: 25%;
+  top: 45%;
+}
+
+@media only screen and (max-width: 768px) {
+  mark {
+    font-size: 1em;
+    pointer-events: none;
+  }
+  #not-found-list {
+    pointer-events: none;
+  }
+}

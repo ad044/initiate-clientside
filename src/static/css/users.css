@@ -1,0 +1,225 @@
+.users-body {
+  background-color: black;
+  background: url(../images/blog.png);
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+#users-wrapper {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 70%;
+  color: white;
+}
+
+#users-container {
+  border: 1px solid rgb(218, 0, 145);
+  width: 100%;
+  background: rgb(0, 0, 0, 0.75);
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  z-index: -1;
+}
+
+#users-container-knobs {
+  width: 100%;
+}
+
+#users-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.users-knob {
+  display: inline-block;
+  float: left;
+  margin-left: 1em;
+  margin-top: -1.2em;
+  transition: all 0.2s ease-in-out;
+}
+
+.users-knob-text {
+  background-color: #000;
+  color: #fff;
+  height: 0.8em;
+  padding: 0.5em;
+  margin-right: 1em;
+  border: 1px solid rgb(218, 0, 145);
+  font-size: 2em;
+}
+
+.users-knob-active {
+  color: white;
+  border: 2px solid #ff4ad2;
+}
+
+.users-header {
+  text-align: center;
+  font-size: 3em;
+}
+
+.users-body-section {
+  border: 2px solid #f063cd;
+  margin: 2em;
+  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: inline-block;
+  flex: 1;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.users-body-section-header {
+  font-size: 3em;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.users-flex-p {
+  text-align: center;
+}
+
+#user-settings-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-settings-section {
+  border: 2px solid #f063cd;
+  margin: 2em;
+  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: inline-block;
+  flex: 1;
+}
+
+.user-settings-header {
+  text-align: center;
+}
+
+.users-warning {
+  font-size: 2em;
+  text-align: center;
+  border: 2px solid #f063cd;
+  margin: 0;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 1em;
+}
+
+.users-section-discord {
+  background: url(../images/discorduser.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.users-section-boards {
+  background: url(../images/boardsuser.png);
+  background-size: cover;
+}
+
+.users-input {
+  width: 100%;
+  border: 1px solid white;
+  padding: 0;
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.users-button {
+  margin: auto;
+  display: block;
+  width: 15em;
+  box-shadow: 0px 8px white;
+}
+
+.discord-section {
+  margin: 0;
+  margin-right: 2em;
+}
+
+.discord-button {
+  margin-top: 0.5em;
+}
+
+.transition-users-enter {
+  transform: translateX(-150vw) !important;
+  transition: all 0.5s;
+}
+
+.transition-users-enter-done {
+  transform: translateX(0vw) !important;
+  transition: all 0.5s;
+}
+
+.transition-users-exit {
+  transform: translateX(-150vw) !important;
+  transition: all 0.5s;
+}
+
+.transition-users-exit-done {
+  transform: translateX(-150vw) !important;
+  transition: all 0.5s;
+  display: none;
+}
+
+.transition-discord-enter {
+  transform: translateX(150vw) !important;
+  display: block !important;
+  transition: all 0.2s;
+}
+
+.transition-discord-enter-done {
+  transform: translateX(0vw) !important;
+  display: block !important;
+  transition: all 0.2s;
+}
+
+.transition-discord-exit {
+  transform: translateX(150vw) !important;
+  display: block !important;
+  transition: all 0.2s;
+}
+
+.transition-discord-exit-done {
+  transform: translateX(150vw) !important;
+  transition: all 0.2s;
+}
+
+.current {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+#users-section-boards-header:hover,
+#users-section-discord-header:hover,
+.users-flex-p:hover {
+  cursor: pointer;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .users-knob-text {
+    font-size: 1em;
+  }
+  .users-header {
+    font-size: 1.5em;
+  }
+  .users-button {
+    font-size: 1em;
+  }
+  .discord-section {
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+}
