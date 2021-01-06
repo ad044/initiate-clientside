@@ -15,7 +15,7 @@
     "@types/react-router-dom": "^5.1.5",
     "@types/react-transition-group": "^4.4.0",
     "@types/typed.js": "^2.0.9",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "js-cookie": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
